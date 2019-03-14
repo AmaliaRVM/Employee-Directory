@@ -25,6 +25,6 @@ export default {
 .homepage{
     width: 50vw;
     height: 50vh;
-    border:solid red;
+    border:solid orange;
 }
 </style>
