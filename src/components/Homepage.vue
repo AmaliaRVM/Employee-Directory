@@ -2,7 +2,7 @@
     <div class="homepage">
         <Header/>
         <SearchBar/>
-        <EmployeeList/>
+        <EmployeeList :getInfo="getInfo"/>
     </div>
 </template>
 
@@ -16,6 +16,16 @@ export default {
         Header,
         SearchBar,
         EmployeeList,
+    },
+
+    props: {
+        appInfo: Function
+    },
+
+    methods: {
+        getInfo(x) {
+            this.appInfo(x)
+        }
     }
 
 }

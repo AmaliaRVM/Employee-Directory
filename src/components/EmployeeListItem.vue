@@ -1,5 +1,5 @@
 <template>
-    <div id="listItem">
+    <div id="listItem" @click="handleClick">
         <ul>
             <li v-for="(element,index) in employee" :key="index">
                 {{element}}
@@ -11,8 +11,15 @@
 <script>
 export default {
     props: {
-        employee: Object
+        employee: Object,
+        itemInfo:Function
         
+    },
+
+    methods: {
+        handleClick(){
+            this.itemInfo(this.employee)
+        }
     }
 }
 </script>

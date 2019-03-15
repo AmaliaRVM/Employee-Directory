@@ -2,7 +2,7 @@
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <Homepage/>
+    <Homepage :appInfo="appInfo"/>
     <EmployeePage/>
 
   </div>
@@ -19,7 +19,20 @@ export default {
     /* HelloWorld */
     Homepage,
     EmployeePage,
+  },
+
+  data() {
+    return {
+      objectToDisplay: ""
+    }
+  },
+
+  methods: {
+    appInfo(y) {
+      this.objectToDisplay = y
+    }
   }
+
 }
 </script>
 

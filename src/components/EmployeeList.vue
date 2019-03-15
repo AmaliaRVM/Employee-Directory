@@ -1,6 +1,11 @@
 <template>
     <div id="employeelist">
-        <EmployeeListItem v-for="(element, index) in employees" :key="index" v-bind:employee='element'></EmployeeListItem>
+        <EmployeeListItem 
+        :itemInfo="itemInfo"
+        v-for="(element, index) in employees" 
+        :key="index" 
+        v-bind:employee='element'>
+        </EmployeeListItem>
     </div>
 </template>
 
@@ -15,9 +20,25 @@ export default {
         }
     },
 
+    props: {
+        getInfo: Function
+    },
+
     components: {
         EmployeeListItem,
 
+    },
+
+    methods: {
+        itemInfo(info){
+            this.getInfo(info)
+        },
+
+        
+    
+    
+        
+        
     }
 
 }
