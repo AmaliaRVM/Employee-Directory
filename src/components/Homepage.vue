@@ -23,8 +23,9 @@ export default {
 
 <style scoped>
 .homepage{
-    width: 50vw;
-    height: 50vh;
+    width: 40vw;
+    height: 90vh;
+    margin: 20px;
     border:solid orange;
 }
 </style>

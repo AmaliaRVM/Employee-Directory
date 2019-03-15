@@ -1,6 +1,8 @@
 <template>
     <div class="search">
         <h3>{{searchBar}}</h3>
+        <input type="text" placeholder="Search.." name="search2">
+        <button type="submit"></button> 
     </div>
 </template>
 

@@ -1,13 +1,18 @@
 <template>
     <div id="listItem">
-        {{list}}
+        <ul>
+            <li v-for="(element,index) in employee" :key="index">
+                {{element}}
+            </li>
+        </ul>
     </div>
 </template>
 
 <script>
 export default {
     props: {
-        list: String
+        employee: Object
+        
     }
 }
 </script>

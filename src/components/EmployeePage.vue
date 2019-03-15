@@ -1,19 +1,25 @@
 <template>
     <div class="employeepage">
+        <SecondHeader/>
 
     </div>
 </template>
 
 <script>
-export default {
+import SecondHeader from './SecondHeader.vue'
 
+export default {
+components: {
+    SecondHeader,
+}
 }
 </script>
 
 <style scoped>
 .employeepage {
-    width: 50vw;
-    height: 50vh;
+    width: 40vw;
+    height: 90vh;
+    margin: 20px;
     border:solid brown;
 }
 

@@ -29,11 +29,12 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  margin: auto;
   display: flex;
   justify-content: space-around;
   color: #2c3e50;
   border: solid black;
-  width: 95vw;
+  width: 75vw;
   height: 95vh;
 }
 </style>
